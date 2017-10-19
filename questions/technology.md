@@ -160,14 +160,12 @@
 ### 1.	SQL DDL, DML, DQL을 각각 설명하세요.
 
 1.   Data Definition Language 테이블 정의를 위한 SQL 문법입니다.
-       DDL의 종류
          - ALTER  테이블 수정
          - DROP   테이블 삭제
          - CREATE 테이블 생성
 
 
 2.  Structured Query Language Data Manipulation Language 데이터 조작을 위한 SQL 문법입니다.
-       DML의 종류
           - SELECT 데이터 조회
           - DELETE 데이터 삭제
           - UPDATE 데이터 수정
