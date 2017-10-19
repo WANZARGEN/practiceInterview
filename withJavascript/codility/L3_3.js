@@ -1,23 +1,20 @@
+function solution2(X, Y, D) {
+   if(X == Y) return 0
+
+   var t = Y - X;
+
+   return t % D > 0 ? parseInt(t / D) + 1 : t / D
+}
+//88%
+
 function solution(X, Y, D) {
     if(X == Y) return 0
 
-    var t = Y - X
-    var f = t / D
-    console.log("X: " + X + ", Y: " + Y + ", D: " + D)
-    console.log("t(Y - X): " + t)
-    console.log("f(t / D): " + f)
-    console.log("f - parseInt(f): " + (f - parseInt(f)))
-    console.log("t % D: " + t % D)
-    console.log("-------------")
-    var a = 79.99 * 100;
-    console.log(Math.floor(a));
-    //=> 7998
-    var b = 7999.0;
-    //=> 7999.0
-    console.log(Math.floor(b));
+    var f = (Y - X) / D
 
     return f - parseInt(f) > 0 ? parseInt(f) + 1 : parseInt(f)
 }
+//100%
 
 solution(1, 2, 1)
 solution(1, 11, 3)
@@ -25,6 +22,8 @@ solution(10, 222222, 222211)
 solution(1, 1000000000, 1000000000)
 solution(1, 10, 10)
 solution(1, 1000000000, 999999998)
+
+
 /*
 Task 1
 Task description
