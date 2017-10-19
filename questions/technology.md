@@ -161,17 +161,19 @@
 
 1.   Data Definition Language 테이블 정의를 위한 SQL 문법입니다.
        DDL의 종류
-         1. ALTER  테이블 수정
-         2. DROP   테이블 삭제
-         3. CREATE 테이블 생성
+         - ALTER  테이블 수정
+         - DROP   테이블 삭제
+         - CREATE 테이블 생성
 
 
 2.  Structured Query Language Data Manipulation Language 데이터 조작을 위한 SQL 문법입니다.
        DML의 종류
-          1. SELECT 데이터 조회
-          2. DELETE 데이터 삭제
-          3. UPDATE 데이터 수정
-          4. INSERT 데이터 추가
+          - SELECT 데이터 조회
+          - DELETE 데이터 삭제
+          - UPDATE 데이터 수정
+          - INSERT 데이터 추가
+
+3.
 
 
 ### 2.	JDBC의 동적 SQL실행에 대해 설명하세요.
