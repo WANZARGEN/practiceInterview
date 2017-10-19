@@ -174,7 +174,10 @@
 3. DQL
 
 ### 2.	JDBC의 동적 SQL실행에 대해 설명하세요.
-
+```
+  - 동적 쿼리문 인지? select * from where = ?
+  - 아니면 connection을 배열에 담아 사용자가 들어올 때 마다 생성 삭제하는 기술인지 헷갈림..
+```
 ### 3.	Inner join과 outer join의 차이를 설명하세요.
 
 ```
