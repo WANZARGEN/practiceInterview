@@ -158,7 +158,7 @@
 
 
 ### 1.	SQL DDL, DML, DQL을 각각 설명하세요.
-
+```
 1.   Data Definition Language 테이블 정의를 위한 SQL 문법입니다
       - ALTER  테이블 수정
       - DROP   테이블 삭제
@@ -173,6 +173,8 @@
 
 3. DQL
 
+
+```
 ### 2.	JDBC의 동적 SQL실행에 대해 설명하세요.
 ```
   - 동적 쿼리문 인지? select * from where = ?
