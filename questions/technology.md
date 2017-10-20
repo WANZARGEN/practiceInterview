@@ -222,20 +222,19 @@
 
 ### 1.	SQL DDL, DML, DQL을 각각 설명하세요.
 ```
-1.   Data Definition Language 테이블 정의를 위한 SQL 문법입니다
+1.   Data Definition Language 약자로, 테이블 정의를 위한 SQL 문법입니다
       - ALTER  테이블 수정
       - DROP   테이블 삭제
       - CREATE 테이블 생성
 
 
-2.  Structured Query Language Data Manipulation Language 데이터 조작을 위한 SQL 문법입니다
-      - SELECT 데이터 조회
+2.  Structured Query Language Data Manipulation Language 약자로, 데이터 조작을 위한 SQL 문법입니다
       - DELETE 데이터 삭제
       - UPDATE 데이터 수정
       - INSERT 데이터 추가
 
-3. DQL
-
+3. DQL이란 Data Query Language의 약자로, 질의어로서 SELECT 가 DQL입니다.
+      - SELECT 데이터 조회
 
 ```
 ### 2.	JDBC의 동적 SQL실행에 대해 설명하세요.
