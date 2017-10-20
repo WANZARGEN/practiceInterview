@@ -1,6 +1,4 @@
 function solution2(X, Y, D) {
-   if(X == Y) return 0
-
    var t = Y - X;
 
    return t % D > 0 ? parseInt(t / D) + 1 : t / D
@@ -8,8 +6,6 @@ function solution2(X, Y, D) {
 //88%
 
 function solution(X, Y, D) {
-    if(X == Y) return 0
-
     var f = (Y - X) / D
 
     return f - parseInt(f) > 0 ? parseInt(f) + 1 : parseInt(f)
