@@ -150,8 +150,10 @@ HTTP POST , http://myweb/users/
 ### 4.  JSTL/EL에 대해 설명하세요.
 
 ### 5. GET방식과 POST방식의 차이를 말씀해 주세요.
-
+```
     -  GET 방식은 주소에 데이터를 담는 방법으로써 길이제약이 존재하고, POST 방식은 HTML문서상 HEAD부분에 데이터를 담음으로써 길이제약이 없고 정보은닉이 가능합니다.
+
+```
 
 
 ## <Framework>
@@ -446,20 +448,33 @@ call과 apply부터 살펴보겠습니다.
 원래 함수는 선언한 후 호출해야 실행되죠. 
 호출하는 방법으로는 함수 뒤에 ()를 붙이는 것과, call 그리고 apply하는 방법이 있습니다.
 
-```javscript
 var example = function (a, b, c) {
   return a + b + c;
 };
 example(1, 2, 3);
 example.call(null, 1, 2, 3);
 example.apply(null, [1, 2, 3]);
-```
 
+보면 call은 보통 함수와 똑같이 인자를 넣고, apply는 인자를 하나로 묶어 배열로 만들어 넣는 것을 알 수 있습니다. 
+call과 apply가 공통적으로 가진 null 인자의 역할은 바로 this를 대체하는 겁니다.
+
+bind 함수는 함수가 가리키는 this만 바꾸고 호출하지는 않는 겁니다.
+
+출처: https://www.zerocho.com/category/Javascript/post/57433645a48729787807c3fd
 ```
 
 ### 7.	꼬리재귀에 대해 설명하세요.
 
 ### 8.	ES5와 ES6의 차이를 설명하세요.
+```
+1) 변수 선언 var vs let
+  - ES6 에서 사용하는 변수 선언. ES5 에서 사용하던 var 외에 const나 let
+2) module import
+3) 클래스
+4) 클래스 상속(확장)
+5) arrow function
+
+```
 
 ### 9.	Call by value, call by reference의 차이를 설명하세요.
 
@@ -470,6 +485,7 @@ example.apply(null, [1, 2, 3]);
     2.  call by reference 는 함수의 인자로 lvalue(대입가능한 메모리의 참조) 가 사용되고, 함수가 호출되면, 메모리의 정보가 함수에 전달되어 함수에서는 그 메모리에 매개변수의 이름을 부여하여 사용하는 함수 호출 방식입니다.
 
         - lvalue 는 left value 를 말하는데, 대입연산자 = 의 왼쪽에 사용할 수 있다는 의미입니다.lvalue 는 값을 저장할 수 있는 메모리를 나타내야 하는데, = 의 오른쪽 수식의 결과를 왼쪽 피연산자에 저장하기 때문입니다. 메모리의 참조 중 배열과 함수는 제외입니다. 배열과 함수는 오른쪽 수식의 결과가 될 수 없기 때문입니다.
+       
 ```
 
 ### 10.	Object와 Instance의 차이를 설명하세요.
