@@ -229,7 +229,24 @@ HTTP POST , http://myweb/users/
 ### 3.	스프링 IoC 컨테이너에 대해 설명하세요.
 
 ### 4.	스프링 컨테이너 종류와 특장을 설명하세요.
+```
+BeanFactory, ApplicationContext 두가지 타입이 있습니다.
+BeanFactory계열은 DI기본사항을 제공하는 가장 간단한 컨테이너입니다. 
+팩토리 디자인 패턴을 구현한 것으로, 빈 팩토리는 빈을 생성하고 분배하는데 책임을 지는 클래스입니다.
 
+ApplicationContext 계열은 BeanFactory와 유사한 기능을 제공하지만 좀 더 많은 기능을 제공합니다.
+국제화 지원을 포함해 텍스트 메시지를 해석하는 수단과
+이미지 등과 같은 자원을 로딩하는 범용적인 방법을 제공합니다.
+리스너로 등록되어 있는 빈에 이벤트 발생을 알려줍니다.
+
+* 가장 많이 사용되는 어플리케이션 컨텍스트 구현체
+ClassPathXmlApplicationContext : 클래스패스에 위치한 xml 파일에서 컨텐스트 정의 내용을 읽어들인다.
+FileSystemxmlApplicationContext : 파일 경로로 지정된 xml 파일에서 컨텐스트 정의 내용을 읽어들인다.
+XmlWebApplicationContext : 웹 어플리케이션에 포함된 xml 파일에서 컨텐스트 정의 내용을 읽어들인다.
+
+
+출처: http://limmmee.tistory.com/13 [심플하게 개발]
+```
 ### 5.	스프링 DI, DL가 무엇이고, 이것을 이용해 객체를 관리하는 방법을 설명하세요.
 
 ### 6.	스프링 AOP, Interceptor에 대해 설명하세요.
